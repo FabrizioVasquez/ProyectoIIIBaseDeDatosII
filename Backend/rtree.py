@@ -1,18 +1,16 @@
-import os
+import face_recognition
 from os import listdir
-from os.path import isfile, join
+import rtree
+
 mypath = '/Users/fabriziovasquez/Downloads/DB2/Proyecto03/ProyectoIIIBaseDeDatosII/Resources/lfw'
 
 onlyfiles = [f for f in listdir(mypath)]
 
-for path, subdirs, files in os.walk(mypath):
-    for name in files:
-        print(os.path.join(path, name))
+def face_vector(file_stream):
+    img = face_recognition.load_image_file(file_stream)
+    unkown_face_encoding = face_recognition.face_encodings(img)
+    return unkown_face_encoding
 
-def upload():
-    print(onlyfiles)
-
-#upload()
 
 
 
