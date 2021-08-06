@@ -82,5 +82,5 @@ _Se obtienen todas las imágenes que tengan un Score menor al Radio_
 | N = 1600      |               |                 |
 | N = 3200      |               |                 |
 | N = 6400      |               |                 |
-| N = 1280      |               |                 |
+| N = 12800     |               |                 |
 
