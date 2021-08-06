@@ -11,7 +11,7 @@ _La imagen de output va a ser una de las imagenes dentro de la base de datos._
 ### Estructura: índice RTree
 
 _Primero se leen las imagenes y se obtienen arrays de los vectores característicos de estas._
-_Estos arrays lo metemos en un diccionario para luego poder procesarlo en disco_
+_Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nombre de las personas para luego poder procesarlo en disco_
 
 _Las imágenes van a ser guardadas en un RTree._
 
