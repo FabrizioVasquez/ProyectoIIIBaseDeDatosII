@@ -24,7 +24,7 @@ _Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valor
 
 _Cada rtree analizará estas parejas de "coordenadas" y podremos hacer las consultas respectivas, y estos rtrees devolverán la información únicamente tomando en cuenta estas dos coordenadas_
 
-** Contenido de RTrees <br />
+* Contenido de RTrees <br />
 
 <img src="https://cdn.discordapp.com/attachments/841118704547659797/873081201894768640/unknown.png" height="100">
 
