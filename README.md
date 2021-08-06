@@ -37,10 +37,6 @@ _En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránki
 
 _Se utilizó la Librería https://rtree.readthedocs.io/en/latest/ para realizar los rtree_
 
-//todo
-
-![Estructura del indexado de imágenes](https://cdn.discordapp.com/attachments/841118704547659797/873043316185395230/unknown.png)
-
 
 ### Técnicas de busqueda por similitud a utilizar
 
