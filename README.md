@@ -48,9 +48,24 @@ _Se utilizarán los siguientes algoritmos para la busqueda por similitud:_
 
 #### Algoritmo KNN
 ##### KNN RTree
+_Llamas a las N imágenes más similares utilizando la estructura de los Rtrees_ 
+
 ##### KNN Secuencial
+_Primero iteramos por cada Vector Carácterístico de cada imágen y le asignamos un Score a cada uno._
+
+_El Score es calculado a partir de La distancia euclediana del vector característico de la imágen de input y el resto de vectores característicos._
+
+_Se ordenan todos los scores de menor a mayor_
+
+_Se obtienen las imagenes de los n primeros Scores_
 
 #### Algoritmo de búsqueda por rango
+
+_Se calcula el Score de cada imágen._
+
+_Se asigna un valor de radio._
+
+_Se obtienen todas las imágenes que tengan un Score menor al Radio_
 
 
 ### Análisis
