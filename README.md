@@ -70,8 +70,17 @@ _Se obtienen todas las imágenes que tengan un Score menor al Radio_
 
 ### Análisis
 
-| Tiempo        | KNN-RTree   | KNN-Secuencial  |
-| ------------- |:-------------:| -----:|
-| N = 100      | right-aligned | $1600 |
-| N = 200       | centered      |   $12 |
-| N = 400 | are neat      |    $1 |
+* Se realizará una busqueda de las 8 imágenes más cercanas.
+* Donde N = Número de imágenes en la colección:
+
+| Tiempo(s)     | KNN-RTree     | KNN-Secuencial  |
+| ------------- |:-------------:| -----:          |
+| N = 100       |               |                 |
+| N = 200       |               |                 |
+| N = 400       |               |                 |
+| N = 800       |               |                 |
+| N = 1600      |               |                 |
+| N = 3200      |               |                 |
+| N = 6400      |               |                 |
+| N = 1280      |               |                 |
+
