@@ -18,11 +18,9 @@ _Las imágenes van a ser guardadas en un RTree._
 _Lo que hace un Rtree es ubicar valores de 2 a más dimensiones en su estructura de manera espacial y según las "coordenadas" de sus puntos.
 Sin embargo, ahora tenemos vectores con 128 diensiones, por lo que utilizar un rtree convencional no es una opción._
 
-_Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valores de cada imagen en parejas de 2._
+_Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valores de cada imagen en grupos de 4._
 
-_De esta forma cada rtree que tengamos se asignado a una pareja de las imágenes._
-
-_Cada rtree analizará estas dos "coordenadas" y podremos hacer las consultas respectivas, y estos rtrees devolverán la información únicamente tomando en cuenta estas dos coordenadas_
+_Cada rtree analizará estas 4 "coordenadas" y podremos hacer las consultas respectivas, y estos rtrees devolverán la información únicamente tomando en cuenta estas dos coordenadas_
 
 _Luego de hacer las consultas, tendremos k respuestas por cada rtree que tengamos_
 
