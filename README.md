@@ -11,11 +11,22 @@ _La imagen de output va a ser una de las imagenes dentro de la base de datos._
 ### Estructura: índice RTree
 
 _Primero se leen las imagenes y se obtienen arrays de los vectores característicos de estas._
-_Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nombre de las personas para luego poder procesarlo en disco_
+_Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nombre de las personas para luego poder procesarlo en disco._
 
 _Las imágenes van a ser guardadas en un RTree._
 
+_Lo que hace un Rtree es ubicar valores de 2 a más dimensiones en su estructura de manera espacial y según las "coordenadas" de sus puntos
+sin embargo, ahora tenemos vectores con 128 diensiones, por lo que el utilizar un rtree convencional no es una opción._
 
+_Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valores de cada imagen en parejas de 2._
+
+_De esta forma cada rtree que tengamos se asignado a una pareja de las imágenes._
+
+_Cada rtree analizará estas dos "coordenadas" y podremos hacer las consultas respectivas, y estos rtrees devolverán la información únicamente tomando en cuenta estas dos coordenadas_
+
+_Luego de hacer las consultas, tendremos k respuestas por cada rtree que tengamos_
+
+_En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránking de los k valores o k imágenes que más se hayan repetido_
 
 ### Técnicas de busqueda por similitud a utilizar
 
