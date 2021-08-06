@@ -34,7 +34,7 @@ _En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránki
 
 ![Imagen input](https://cdn.discordapp.com/attachments/841118704547659797/873083696041824327/unknown.png)
 
-<img src="https://cdn.discordapp.com/attachments/841118704547659797/873083565460570122/unknown.png" height="100">
+<img src="https://cdn.discordapp.com/attachments/841118704547659797/873083565460570122/unknown.png" height="200">
 
 _Se utilizó la Librería https://rtree.readthedocs.io/en/latest/ para realizar los rtree_
 
