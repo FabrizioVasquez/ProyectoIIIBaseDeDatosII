@@ -24,8 +24,9 @@ _Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valor
 
 _Cada rtree analizará estas parejas de "coordenadas" y podremos hacer las consultas respectivas, y estos rtrees devolverán la información únicamente tomando en cuenta estas dos coordenadas_
 
-*Contenido de RTrees
-![Contenido de RTrees](https://cdn.discordapp.com/attachments/841118704547659797/873081201894768640/unknown.png)
+*Contenido de RTrees <br />
+
+![Contenido de RTrees](https://cdn.discordapp.com/attachments/841118704547659797/873081201894768640/unknown.png | scale=50%)
 
 _Luego de hacer las consultas, tendremos k respuestas por cada rtree que tengamos_
 
@@ -33,7 +34,7 @@ _En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránki
 
 ![Imagen input](https://cdn.discordapp.com/attachments/841118704547659797/873083696041824327/unknown.png)
 
-![Proceso de respuesta](https://cdn.discordapp.com/attachments/841118704547659797/873083565460570122/unknown.png)
+![Proceso de respuesta](https://cdn.discordapp.com/attachments/841118704547659797/873083565460570122/unknown.png | scale=50%)
 
 _Se utilizó la Librería https://rtree.readthedocs.io/en/latest/ para realizar los rtree_
 
