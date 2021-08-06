@@ -16,7 +16,7 @@ _Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nomb
 _Las imágenes van a ser guardadas en un RTree._
 
 _Lo que hace un Rtree es ubicar valores de 2 a más dimensiones en su estructura de manera espacial y según las "coordenadas" de sus puntos.
-Sin embargo, ahora tenemos vectores con 128 diensiones, por lo que utilizar un rtree convencional no es una opción._
+Sin embargo, ahora tenemos vectores con 128 dimensiones, por lo que utilizar un rtree convencional no es una opción._
 
 _Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valores de cada imagen en grupos de 2._
 
