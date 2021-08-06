@@ -31,8 +31,9 @@ def upload_image():
     # If no valid image file was uploaded, show the file upload form:
     return '''
     <!doctype html>
-    <title>Es la foto de Vizcarra?</title>
-    <h1>Cargar una foto y ver si corresponde al presidente Vizcarra!</h1>
+    <title>Busqueda por similitud</title>
+    <h1>Cargar una foto</h1>
+    <p> Al cargar una foto le mostraremos las fotos mas parecidas dentro de nuestra db! </p>
     <form method="POST" enctype="multipart/form-data">
       <input type="file" name="file">
       <input type="submit" value="Cargar">
