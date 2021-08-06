@@ -54,6 +54,9 @@ def read_faces(N):
     sum=0
     all_sorted_encodings = sorted(all_face_encodings)[:N]
     for i in all_sorted_encodings:
-        print(i, all_face_encodings[i])
+        a = len(all_face_encodings[i])
+        sum += a
+        print(sum)
+        #print(i, all_face_encodings[i])
 
 read_faces(5749)
