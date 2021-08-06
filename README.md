@@ -2,6 +2,11 @@
 
 _Proyecto de Face Recognition_
 
+Integrantes:
+* Fabrizio Vasquez
+* Alexander Miraval
+* Mateo Noel
+
 ### Objetivos
 
 _Construir una plafaroma en donde busques imágenes similares a una imagen de tu elección._
