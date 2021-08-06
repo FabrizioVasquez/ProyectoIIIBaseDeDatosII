@@ -48,7 +48,7 @@ _Se utilizarán los siguientes algoritmos para la busqueda por similitud:_
 
 #### Algoritmo KNN
 ##### KNN RTree
-_Llamas a las N imágenes más similares utilizando la estructura de los Rtrees_ 
+_Llamas a N imágenes más similares utilizando la estructura de los Rtrees_ 
 
 ##### KNN Secuencial
 _Primero iteramos por cada Vector Carácterístico de cada imágen y le asignamos un Score a cada uno._
