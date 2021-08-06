@@ -69,3 +69,9 @@ _Se obtienen todas las imágenes que tengan un Score menor al Radio_
 
 
 ### Análisis
+
+| Tiempo        | KNN-RTree   | KNN-Secuencial  |
+| ------------- |:-------------:| -----:|
+| N = 100      | right-aligned | $1600 |
+| N = 200       | centered      |   $12 |
+| N = 400 | are neat      |    $1 |
