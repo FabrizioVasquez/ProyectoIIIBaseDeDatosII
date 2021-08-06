@@ -28,6 +28,8 @@ _Luego de hacer las consultas, tendremos k respuestas por cada rtree que tengamo
 
 _En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránking de los k valores o k imágenes que más se hayan repetido_
 
+_Se utilizó la Librería https://rtree.readthedocs.io/en/latest/ para realizar los rtree_
+
 ### Técnicas de busqueda por similitud a utilizar
 
 
