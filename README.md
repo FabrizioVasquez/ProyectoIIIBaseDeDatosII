@@ -70,17 +70,27 @@ _Se obtienen todas las imágenes que tengan un Score menor al Radio_
 
 ### Análisis
 
+_Las siguientes pruebas se realizarán con la imagen mateo.jpg_
+
 * Se realizará una busqueda de las 8 imágenes más cercanas.
 * Donde N = Número de imágenes en la colección:
 
 | Tiempo(s)     | KNN-RTree     | KNN-Secuencial  |
 | ------------- |:-------------:| -----:          |
-| N = 100       |               |                 |
-| N = 200       |               |                 |
-| N = 400       |               |                 |
-| N = 800       |               |                 |
-| N = 1600      |               |                 |
-| N = 3200      |               |                 |
-| N = 6400      |               |                 |
-| N = 12800     |               |                 |
+| N = 100       | 3.9572        | 4.3598          |
+| N = 200       | 4.3071        | 4.0087          |
+| N = 400       | 3.9692        | 4.0960          |
+| N = 800       | 3.9818        | 4.3787          |
+| N = 1600      | 4.1173        | 4.3265          |
+| N = 3200      | 4.2010        | 4.8141          |
+| N = 6400      | 4.0116        | 4.8795          |
+| N = 12800     | 4.1451        | 5.0317          |
 
+* Busqueda por rango, datos = 13171
+
+| Radio         | Cantidad de valores| 
+| ------------- |:-------------:     | 
+| 0.7           | 249                | 
+| 0.8           | 2982               | 
+| 0.9           | 9931               | 
+| 1             | 13002              | 
