@@ -13,6 +13,8 @@ _La imagen de output va a ser una de las imagenes dentro de la base de datos._
 _Primero se leen las imagenes y se obtienen arrays de los vectores característicos de estas._
 _Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nombre de las personas para luego poder procesarlo en disco._
 
+![lectura de imagenes](https://cdn.discordapp.com/attachments/841118704547659797/873079711553683477/unknown.png)
+
 _Las imágenes van a ser guardadas en un RTree._
 
 _Lo que hace un Rtree es ubicar valores de 2 a más dimensiones en su estructura de manera espacial y según las "coordenadas" de sus puntos.
@@ -22,9 +24,16 @@ _Entonces usaremos una colección de rtrees y dividiremos el vector de 128 valor
 
 _Cada rtree analizará estas parejas de "coordenadas" y podremos hacer las consultas respectivas, y estos rtrees devolverán la información únicamente tomando en cuenta estas dos coordenadas_
 
+Contenido de RTrees
+![Contenido de RTrees](https://cdn.discordapp.com/attachments/841118704547659797/873081201894768640/unknown.png)
+
 _Luego de hacer las consultas, tendremos k respuestas por cada rtree que tengamos_
 
 _En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránking de los k valores o k imágenes que más se hayan repetido_
+
+![Imagen input](https://cdn.discordapp.com/attachments/841118704547659797/873083696041824327/unknown.png)
+
+![Proceso de respuesta](![image](https://cdn.discordapp.com/attachments/841118704547659797/873083565460570122/unknown.png)
 
 _Se utilizó la Librería https://rtree.readthedocs.io/en/latest/ para realizar los rtree_
 
