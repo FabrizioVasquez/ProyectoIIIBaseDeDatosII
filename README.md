@@ -13,7 +13,7 @@ _La imagen de output va a ser una de las imagenes dentro de la base de datos._
 _Primero se leen las imagenes y se obtienen arrays de los vectores característicos de estas._
 _Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nombre de las personas para luego poder procesarlo en disco._
 
-<img src="https://cdn.discordapp.com/attachments/841118704547659797/873079711553683477/unknown.png" height="200">
+<img src="https://cdn.discordapp.com/attachments/841118704547659797/873079711553683477/unknown.png" height="100">
 
 _Las imágenes van a ser guardadas en un RTree._
 
@@ -26,13 +26,13 @@ _Cada rtree analizará estas parejas de "coordenadas" y podremos hacer las consu
 
 ** Contenido de RTrees <br />
 
-<img src="https://cdn.discordapp.com/attachments/841118704547659797/873081201894768640/unknown.png" height="200">
+<img src="https://cdn.discordapp.com/attachments/841118704547659797/873081201894768640/unknown.png" height="100">
 
 _Luego de hacer las consultas, tendremos k respuestas por cada rtree que tengamos_
 
 _En el backend lo que mapeamos cuántas veces se repite esto y se arma un ránking de los k valores o k imágenes que más se hayan repetido_
 
-<img src = "https://cdn.discordapp.com/attachments/841118704547659797/873083696041824327/unknown.png" height="200">
+<img src = "https://cdn.discordapp.com/attachments/841118704547659797/873083696041824327/unknown.png" height="100">
 
 <img src="https://cdn.discordapp.com/attachments/841118704547659797/873083565460570122/unknown.png" height="200">
 
