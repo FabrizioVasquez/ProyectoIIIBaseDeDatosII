@@ -47,7 +47,10 @@ _Se utilizarán los siguientes algoritmos para la busqueda por similitud:_
 * Algoritmo de búsqueda por rango
 
 #### Algoritmo KNN
+##### KNN RTree
+##### KNN Secuencial
 
 #### Algoritmo de búsqueda por rango
+
 
 ### Análisis
