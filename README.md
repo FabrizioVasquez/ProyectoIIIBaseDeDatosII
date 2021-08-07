@@ -2,6 +2,8 @@
 
 _Proyecto de Face Recognition_
 
+VIDEO PRESENTACIÓN: https://www.youtube.com/watch?v=JUVOWmnWRlE
+
 Integrantes:
 * Fabrizio Vasquez
 * Alexander Miraval
