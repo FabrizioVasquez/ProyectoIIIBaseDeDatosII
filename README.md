@@ -13,10 +13,15 @@ _Construir una plafaroma en donde busques imágenes similares a una imagen de tu
 _La imagen de input puede ser cualquiera que siga el formato._
 _La imagen de output va a ser una de las imagenes dentro de la base de datos._
 
-### Estructura: índice RTree
+### Estructura: índice RTree - Normal
 
 _Primero se leen las imagenes y se obtienen arrays de los vectores característicos de estas._
 _Estos arrays lo metemos en un diccionario el cual va estar ordenado por el nombre de las personas para luego poder procesarlo en disco._
+_Luego, cada vector  característico de cada imagen será añadido a un RTree de 128 dimensiones, el cual esuna estructura quepermite indexar espacialmente cada valor de este vector característico y a partir de etos valores, calcular la "distancia" o similitud entre los diferentes valores ingresados. En la aplicaciń directa con un RTree se puede hacer de por sí la consulta de los k valores más cercanos directamente.
+
+### Estructura: índice RTree - Solución multidimencional
+
+SIn embargo, está comprobado que para vectores con dimensiones muy numerosas, el Rtree no mantiene su costo eficiente que se esperaría. Nuestra implementación alterna busca eliminar este problema realizando particionamientos en mútiples rtrees, de tla manera que el análisis de similitud se realiza en una fracción del vector característico para maximizar la operación en costo de la consulta. Eso sí, se sacrifica un costo al momento de construir los índices.
 
 <img src="https://cdn.discordapp.com/attachments/841118704547659797/873079711553683477/unknown.png" height="100">
 
