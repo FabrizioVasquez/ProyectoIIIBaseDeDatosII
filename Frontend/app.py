@@ -55,55 +55,28 @@ def upload_image():
 
 
 def detect_faces_in_image(name, N):
-    arbolitos = []
-    for i in range(TREES):
-        arbolitos.append(index.Index())
-
+    properties = index.Property()
+    properties.dimension = 128
+    properties.dat_extension = 'data'
+    properties.idx_extension = 'index'  
     
-    imagen = read_faces(5720)
+    arbol = index.Index("MyIdex", properties = properties)
+
+    imagen = read_faces(5749)
 
     for i in range(len(imagen)):
-        for j in range(64):
-            arbolitos[j].insert(i, list(imagen[i][j]))
+        arbol.insert(i, imagen[i])
+    
 
-    #query = read_faces(1)[0]
     picture = face_recognition.load_image_file(name)
-    query = (face_recognition.face_encodings(picture)[0])
-    final_query = []
-    counter_low = 0
-    counter_top = 2
-    count = 0
-    for j in range(64):
-        final_query.append(query[counter_low : counter_top].tolist())
-        counter_top+=2
-        counter_low+=2
+    query = list(face_recognition.face_encodings(picture)[0])
+    answer = arbol.nearest(query, N)
+    answers = {}
+    for i in range(N):
+        x = next(answer)
+        answers[i]   = str(x) + str(general_index[x])
+    return answers
 
-
-    Ans_generator = []
-    for i in range(64):
-        Ans_generator.append(arbolitos[i].nearest(final_query[i], N))
-
-    real_answers = []
-    for i in Ans_generator:
-        for j in range(N):
-            real_answers.append(next(i))
-
-    real_answers_names = []
-
-    for i in real_answers:
-        real_answers_names.append(general_index[i])
-
-    result = sorted(real_answers, key=real_answers.count, reverse = True)
-    result_count = 0
-    true_result = []
-    for i in result:
-        if i not in true_result:
-            true_result.append(i)
-    resultaditos = {}
-    for i in range (N):
-        resultaditos[i] = str(true_result[i]) + " " + general_index[true_result[i]]
-
-    return resultaditos
 
 def read_faces(N):
     with open('/home/jpalexander1706/BDII/proyecto/ProyectoIIIBaseDeDatosII/Resources/dataset_faces1.dat', 'rb') as f:
@@ -115,18 +88,14 @@ def read_faces(N):
     count = 0
     #print(face_names)
     #print(face_encodings)
+    
     all_sorted_encodings = sorted(all_face_encodings)[:N]
     for i in all_sorted_encodings:
         temp_array = list(all_face_encodings[i])
+        
         for k in range(len(temp_array)):
-            answer[count] = []
             general_index[count] = i
-            counter_low = 0
-            counter_top = 2
-            for j in range(64):
-                answer[count].append(temp_array[k][counter_low : counter_top])
-                counter_top+=2
-                counter_low+=2
+            answer[count] = list(temp_array[k])
             count +=1
         #print(i, all_face_encodings[i])
     return answer
